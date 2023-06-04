@@ -56,6 +56,8 @@ df.isnull().sum()
 
 Feature generation:
 
+#Binary encoder
+
 ```
 import category_encoders as ce
 be=ce.BinaryEncoder()
@@ -70,7 +72,7 @@ df = pd.concat([df, be.fit_transform(df["Source"])], axis=1)
 ndf
 ```` 
 
-EDA Analysis
+EDA Techniques
 
 TYPES OF BIVARIATE ANALYSIS:
 
