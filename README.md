@@ -157,4 +157,4 @@ Multivariate Analysis :
 
 # RESULT:
 
-Thus,Data Science Process on a complex dataset has been performed and data is saved to a file.
+Thus,Data Science Process on a complex dataset has been performed by applying feature generation and EDA techniques and data is saved to a file.
