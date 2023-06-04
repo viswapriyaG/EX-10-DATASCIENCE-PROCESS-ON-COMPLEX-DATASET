@@ -35,6 +35,7 @@ REGISTER NUMBER: 212221220061
 
 Cleaning data:
 
+```
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -51,9 +52,11 @@ df.info()
 df.duplicated()
 
 df.isnull().sum()
+``` 
 
 Feature generation:
 
+```
 import category_encoders as ce
 be=ce.BinaryEncoder()
 ndf=be.fit_transform(df["Airline"])
@@ -65,12 +68,14 @@ be=ce.BinaryEncoder()
 ndf=be.fit_transform(df["Source"])
 df = pd.concat([df, be.fit_transform(df["Source"])], axis=1)
 ndf
+```` 
 
 EDA Analysis
 
 TYPES OF BIVARIATE ANALYSIS:
 
-1) Numerical
+```
+1)Numerical
 
 sns.scatterplot (df['Date_of_Journey'],df['Dep_Time'])
 
@@ -88,15 +93,18 @@ plt.xticks(rotation = 90)
 plt.xlabel=("Duration")
 plt.ylabel=("Price")
 plt.show()
+```
 
 Multivariate Analysis :
 
+```
 df.corr()
 data = np.random.randint(low = 1, high = 100, size = (10, 10))
 print("The data to be plotted:\n")
 print(data)
 hm = sns.heatmap(data = data)
 plt.show()
+```
 
 # OUTPUT
 
